@@ -11,6 +11,7 @@ const app = express()
 const indexRouter = require('./routes/index')
 const authRouter = require('./routes/auth')
 const triviaRouter = require('./routes/trivia')
+const mainMenuRouter = require('./routes/mainmenu')
 const lobbyRouter = require('./routes/lobby')
 const leaderboardRouter = require('./routes/leaderboard')
 
@@ -32,6 +33,7 @@ app.use('/', indexRouter)
 app.use('/auth', authRouter)
 app.use('/trivia', triviaRouter)
 app.use('/leaderboard', leaderboardRouter)
+app.use('/mainmenu', mainMenuRouter)
 app.use('/lobby', lobbyRouter)
 
 
